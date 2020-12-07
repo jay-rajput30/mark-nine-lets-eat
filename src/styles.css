@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --primary-color: #3f012c;
+  --secondary-color: #f5054f;
+  --alternate-color: #efc0fe;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--alternate-color);
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btnGroup {
+  margin-top: 1rem;
+}
+.btn {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  font-family: inherit;
+}
