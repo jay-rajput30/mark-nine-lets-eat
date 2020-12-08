@@ -32,7 +32,7 @@ h1 {
 }
 
 .btn {
-  margin-left: 1rem;
+  margin: 0.7rem;
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
