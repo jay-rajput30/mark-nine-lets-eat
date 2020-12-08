@@ -5,6 +5,7 @@
   --secondary-color: #f5054f;
   --alternate-color: #efc0fe;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -26,6 +27,7 @@
 .btnGroup {
   margin-top: 1rem;
 }
+
 .btn {
   margin-left: 0.5rem;
   padding: 0.5rem;
@@ -34,13 +36,17 @@
   font-family: inherit;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 .food-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-top: 2px dotted gray;
+  border-top: 2px dotted var(--primary-color);
 }
 
 .food-item {
