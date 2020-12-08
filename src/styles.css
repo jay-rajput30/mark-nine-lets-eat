@@ -33,3 +33,26 @@
   border-radius: 10px;
   font-family: inherit;
 }
+
+.food-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px dotted gray;
+}
+
+.food-item {
+  padding: 0.8rem;
+  background-color: var(--secondary-color);
+  width: 70%;
+  margin: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  color: var(--alternate-color);
+}
+
+.food-item:nth-child(1) {
+  margin-top: 2rem;
+}
