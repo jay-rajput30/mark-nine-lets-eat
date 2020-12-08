@@ -2,7 +2,22 @@ import React, { useState } from "react";
 import "./styles.css";
 
 let indian = {
-  "konkani cuisine": "4/5",
+  "maharashtrian cuisine": "4/5",
+  "kashmiri cuisine": "3.5/5"
+};
+
+let chinese = {
+  "Shandong Cuisine": "2/5",
+  "Hunan Cuisine": "3/5"
+};
+
+let italian = {
+  "maharashtrian cuisine": "4/5",
+  "kashmiri cuisine": "4/5"
+};
+
+let thai = {
+  "maharashtrian cuisine": "4/5",
   "kashmiri cuisine": "4/5"
 };
 
@@ -39,10 +54,10 @@ export default function App() {
 
       <ul className="food-list">
         <li className="food-item">
-          {item1} <span>{rating1}</span>
+          {item1} <strong>{rating1}</strong>
         </li>
         <li className="food-item">
-          {item2} <span>{rating2}</span>
+          {item2} <strong>{rating2}</strong>
         </li>
       </ul>
     </div>
