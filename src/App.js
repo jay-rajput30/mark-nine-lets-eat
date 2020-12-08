@@ -2,27 +2,36 @@ import React, { useState } from "react";
 import "./styles.css";
 
 let indian = {
-  "maharashtrian cuisine": "4/5",
-  "kashmiri cuisine": "3.5/5"
+  "tandoori chicken": "5/5",
+  samosa: "4/5"
 };
 
 let chinese = {
-  "Shandong Cuisine": "2/5",
-  "Hunan Cuisine": "3/5"
+  "manchow soup": "3/5",
+  "fried rice": "4/5"
 };
 
 let italian = {
-  "maharashtrian cuisine": "4/5",
-  "kashmiri cuisine": "4/5"
+  pasta: "3/5",
+  pizza: "4/5"
 };
 
-let thai = {
-  "maharashtrian cuisine": "4/5",
-  "kashmiri cuisine": "4/5"
+let american = {
+  hamburger: "4/5",
+  nachos: "3/5"
 };
 
 let indianCuisines = Object.keys(indian);
 let indianCuisineRating = Object.values(indian);
+
+let chineseCuisines = Object.keys(chinese);
+let chineseCuisineRating = Object.values(chinese);
+
+let italianCuisines = Object.keys(italian);
+let italianCuisineRating = Object.values(italian);
+
+let americanCuisines = Object.keys(american);
+let americanCuisineRating = Object.values(american);
 
 export default function App() {
   let [item1, setItem1] = useState("food item will appear here");
@@ -38,17 +47,50 @@ export default function App() {
     setRating2(indianCuisineRating[1]);
   }
 
+  function chineseClickHandler() {
+    setItem1(chineseCuisines[0]);
+    setItem2(chineseCuisines[1]);
+    setRating1(chineseCuisineRating[0]);
+    setRating2(chineseCuisineRating[1]);
+  }
+
+  function italianClickHandler() {
+    setItem1(italianCuisines[0]);
+    setItem2(italianCuisines[1]);
+    setRating1(italianCuisineRating[0]);
+    setRating2(italianCuisineRating[1]);
+  }
+  function americanClickHandler() {
+    setItem1(americanCuisines[0]);
+    setItem2(americanCuisines[1]);
+    setRating1(americanCuisineRating[0]);
+    setRating2(americanCuisineRating[1]);
+  }
+
   return (
     <div className="App">
       <div className="container">
         <h1>Good Food</h1>
+        <small>
+          {" "}
+          checkout my top food recommendations{" "}
+          <span role="img" aria-label="food">
+            🍝
+          </span>
+        </small>
         <div className="btnGroup">
           <button onClick={indianClickHandler} className=" btn btnIndian">
             Indian
           </button>
-          <button className="btn btnChinese">Chinese</button>
-          <button className="btn btnItalian">Italian</button>
-          <button className="btn btnThai">Thai</button>
+          <button onClick={chineseClickHandler} className="btn btnChinese">
+            Chinese
+          </button>
+          <button onClick={italianClickHandler} className="btn btnItalian">
+            Italian
+          </button>
+          <button onClick={americanClickHandler} className="btn btnThai">
+            American
+          </button>
         </div>
       </div>
 

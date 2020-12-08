@@ -37,6 +37,8 @@ h1 {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   font-family: inherit;
+  letter-spacing: 0.2ch;
+  transition: all 0.3s ease-in;
 }
 
 .btn:hover {
@@ -64,6 +66,7 @@ h1 {
   border-radius: 10px;
   color: white;
   user-select: none;
+  letter-spacing: 0.2ch;
 }
 
 .food-item:nth-child(1) {
