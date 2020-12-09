@@ -11,18 +11,25 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  width: 100%;
+  height: 100vh;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   background-color: var(--alternate-color);
   height: 100vh;
+  outline: none;
 }
 
 .container {
   margin: 0 auto;
   padding: 2rem;
 }
+
 h1 {
   color: var(--primary-color);
 }
@@ -34,11 +41,14 @@ h1 {
 .btn {
   margin: 0.7rem;
   padding: 0.5rem;
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
   border-radius: 10px;
   font-family: inherit;
   letter-spacing: 0.2ch;
   transition: all 0.3s ease-in;
+  background-color: var(--alternate-color);
+  -moz-box-shadow: 2px 2px 15px 0 #d04afc, -5px -5px 18px 0 #faebff;
+  box-shadow: 2px 2px 15px 0 #a221cd, -5px -5px 18px 0 #d09fe0;
 }
 
 .btn:hover {

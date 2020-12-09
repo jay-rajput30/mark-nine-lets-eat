@@ -70,14 +70,17 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Good Food</h1>
-        <small>
-          {" "}
-          checkout my top food recommendations{" "}
-          <span role="img" aria-label="food">
-            🍝
-          </span>
-        </small>
+        <header class="header">
+          <h1>Good Food</h1>
+          <small>
+            {" "}
+            checkout my top food recommendations{" "}
+            <span role="img" aria-label="food">
+              🍝
+            </span>
+          </small>
+        </header>
+
         <div className="btnGroup">
           <button onClick={indianClickHandler} className=" btn btnIndian">
             Indian
