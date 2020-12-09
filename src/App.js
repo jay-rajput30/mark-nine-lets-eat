@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+// import data from "./data.js";
 
 let indian = {
   "tandoori chicken": "5/5",
@@ -71,13 +72,15 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header class="header">
-          <h1>Good Food</h1>
-          <small>
-            {" "}
-            checkout my top food recommendations{" "}
+          <h1>
+            Good Food{" "}
             <span role="img" aria-label="food">
               🍝
             </span>
+          </h1>
+          <small>
+            checkout my top 3 food recommendations. Click buttons to view
+            details.
           </small>
         </header>
 
