@@ -40,7 +40,7 @@ h1 {
 
 .btn {
   margin: 0.7rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: none;
   /* border: 2px solid var(--primary-color); */
   border-radius: 10px;
@@ -48,8 +48,8 @@ h1 {
   letter-spacing: 0.2ch;
   transition: all 0.3s ease-in;
   background-color: var(--alternate-color);
-  box-shadow: 2px 2px 12px 0 #e8d1ef inset, -1px -1px 5px 0 #a221cd inset;
-  box-shadow: 1px 1px 5px 0 #a221cd inset, -2px -2px 6px 0 #e4bcf1 inset;
+  /* box-shadow: 2px 2px 12px 0 #e8d1ef inset, -1px -1px 5px 0 #a221cd inset; */
+  box-shadow: 1px 1px 5px 0 #a221cd, -2px -2px 6px 0 #e4bcf1;
 }
 
 .btn:hover {
