@@ -61,9 +61,13 @@ blockquote {
 
 .btn:hover {
   cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 5px 0 #a221cd, -2px -2px 6px 0 #e4bcf1;
 }
 .btn:active {
   transform: scale(0.95);
+  border: none;
+  box-shadow: 1px 1px 5px 0 #a221cd, -2px -2px 6px 0 #e4bcf1;
 }
 
 .food-list {
