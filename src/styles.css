@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 :root {
   --primary-color: #3f012c;
-  --secondary-color: #f5054f;
+  --secondary-color: hsl(342, 96%, 49%);
   --alternate-color: #efc0fe;
 }
 
@@ -77,13 +77,13 @@ blockquote {
 
 .food-item {
   padding: 0.8rem;
-  background-color: #fd2868;
+  background-color: #d36ef5;
   width: 70%;
   margin: 1rem;
   border: none;
-  box-shadow: 1px 1px 5px 0 #630622, -2px -2px 6px 0 #f5d6e0;
+  box-shadow: 1px 1px 5px 0 #350413, -2px -2px 6px 0 #f1e4e8;
   border-radius: 10px;
-  color: white;
+  color: var(--primary-color);
   user-select: none;
   letter-spacing: 0.2ch;
 }
@@ -95,4 +95,5 @@ blockquote {
 p {
   font-size: 0.8rem;
   margin: 0.8rem;
+  letter-spacing: 0.2ch;
 }
