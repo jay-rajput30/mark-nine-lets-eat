@@ -86,10 +86,14 @@ export default function App() {
   function getFoodItem(fItem) {
     let foodName = fItem.name;
     let foodRating = fItem.rating;
+    let fDesc = fItem.desc;
 
     let listing = (
       <li className="food-item">
-        {foodName} <strong>{foodRating}</strong>
+        <h3>
+          {foodName} <strong>{foodRating}</strong>
+        </h3>
+        <p>{fItem.desc}</p>
       </li>
     );
     return listing;
@@ -108,6 +112,8 @@ export default function App() {
             checkout my top food recommendations. Click buttons to view details.
           </small>
         </header>
+
+        <blockquote>food is everything we are</blockquote>
 
         <div className="btnGroup">
           {foodDataKeys.map((f) => {
@@ -130,20 +136,12 @@ export default function App() {
           <button onClick={americanClickHandler} className="btn btnThai">
             American
           </button> */}
+        <ul className="food-list">
+          {food.map((f) => {
+            return getFoodItem(f);
+          })}
+        </ul>
       </div>
-      <ul className="food-list">
-        {food.map((f) => {
-          return getFoodItem(f);
-        })}
-      </ul>
-      {/* <ul className="food-list">
-        <li className="food-item">
-          {item1} <strong>{rating1}</strong>
-        </li>
-        <li className="food-item">
-          {item2} <strong>{rating2}</strong>
-        </li>
-      </ul> */}
     </div>
   );
 }

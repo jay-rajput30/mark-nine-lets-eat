@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 :root {
   --primary-color: #3f012c;
   --secondary-color: #f5054f;
@@ -15,12 +15,13 @@
 body {
   width: 100%;
   height: 100vh;
+  background-color: var(--alternate-color);
 }
 .App {
   font-family: sans-serif;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  background-color: var(--alternate-color);
+  /* background-color: var(--alternate-color); */
   height: 100vh;
   outline: none;
 }
@@ -32,10 +33,16 @@ body {
 
 h1 {
   color: var(--primary-color);
+  font-size: 3rem;
 }
 
+blockquote {
+  font-family: "Dancing Script", cursive;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
 .btnGroup {
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 .btn {
@@ -70,10 +77,11 @@ h1 {
 
 .food-item {
   padding: 0.8rem;
-  background-color: var(--secondary-color);
+  background-color: #fd2868;
   width: 70%;
-  margin: 0.5rem;
-  border: 2px solid var(--primary-color);
+  margin: 1rem;
+  border: none;
+  box-shadow: 1px 1px 5px 0 #630622, -2px -2px 6px 0 #f5d6e0;
   border-radius: 10px;
   color: white;
   user-select: none;
@@ -82,4 +90,9 @@ h1 {
 
 .food-item:nth-child(1) {
   margin-top: 2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0.8rem;
 }
